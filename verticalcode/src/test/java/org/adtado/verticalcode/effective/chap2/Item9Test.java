@@ -9,6 +9,7 @@ public class Item9Test {
     @Test
     public void try_with_resource_자원회수_테스트() throws Exception {
 
+        // 나중에 생성된 자원이 먼저 회수된다!
         try(CustomResource1 cr1 = new CustomResource1(); CustomResource2 cr2 = new CustomResource2()) {
             cr1.doSomeThing();
             cr2.doSomeThing();
